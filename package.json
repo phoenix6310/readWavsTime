@@ -1,0 +1,18 @@
+{
+  "name": "20200112ReadWav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node read.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "moment": "^2.24.0",
+    "node-xlsx": "^0.15.0",
+    "wav": "^1.0.2"
+  }
+}

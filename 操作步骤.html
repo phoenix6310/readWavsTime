@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>操作步骤</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+        }
+
+        .steps-wrap {
+            margin: 0 auto;
+            display: flex;
+            height: 800px;
+        }
+        .border{
+            width: 1px;
+            height: 100%;
+            border-right: 1px dotted red;
+            margin: 0 10px;
+        }
+        .left {
+            
+        }
+        .red{
+            color: red;
+        }
+
+        ul li {
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>读文件夹下音频总时长</h2>
+    <div class="steps-wrap">
+        <div class="left">
+            <h4>适用情形：</h4>
+            <ul>
+                <li>
+                    1.音频格式为 wav
+                </li>
+                <li>
+                    <div>
+                        2.文件目录为如下形式
+                    </div>
+                    <img src="./imgs/1.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="border"></div>
+        <div class="right">
+            <h4>操作步骤</h4>
+            <ul>
+                <li>
+                    1.找到程序所在文件夹。比如：<span class="red">D:\readWavsTime</span>
+                </li>
+                <li>
+                    <div>
+                        2.拖动<span class="red">readWavsTime文件夹</span>至<span class="red">vscode图标</span>上。
+                    </div>
+                    <img src="./imgs/2.png" alt="">
+                </li>
+                <li>
+                    3.复制待读文件夹的路径。如实例中test文件夹的路径为：<span class="red">E:\test</span>
+                </li>
+                <li>
+                    <div>
+                        4.将步骤3中的地址粘贴至config.js中entry后的引号内，并将路径中<span class="red">\</span>修改为<span class="red">/</span class="red"> （快捷键 ctrl+h）
+                    </div>
+                    <img src="./imgs/3.png" alt="">
+                </li>
+                <li>
+                    5.在程序所在文件夹的地址栏输入<span class="red">cmd</span>后按下<span class="red">enter键</span>
+                </li>
+                <li>
+                    6.在命令行窗口输入：<span class="red">npm start</span> 后按下<span class="red">enter键</span>。
+                </li>
+                <li>
+                    7.等待窗口提示<span class="red">已生成文件...</span>即可
+                </li>
+                <li>
+                    8.读其他文件夹时，<span class="red">重复步骤3-7</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
